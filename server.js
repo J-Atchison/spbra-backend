@@ -7,6 +7,20 @@ const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 
+// Add this root route
+app.get('/', (req, res) => {
+  res.json({
+    message: 'SPBRA Payment API',
+    status: 'running',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      createPayment: 'POST /api/payments/venmo-intent',
+      getPayments: '/api/payments'
+    }
+  });
+});
+
 // In-memory storage (no database needed)
 let payments = [];
 let paymentCounter = 1;
