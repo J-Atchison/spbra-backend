@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../spbra-test/node_modules"
+		},
+		{
+			"path": "../../../../spbra-test/spbra-backend"
+		},
+		{
+			"path": "../../../../spbra-test/spbra-frontend"
+		},
+		{
+			"path": "../../../../spbra-test/spbra-test"
+		}
+	],
+	"settings": {}
+}
